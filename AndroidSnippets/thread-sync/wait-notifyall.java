@@ -1,4 +1,6 @@
-import com.badlogic.androidgames.framework.impl.GLGame.GLGameState;
+/*
+ * This is an example of standard Java wait/notify mechanism
+ */
 
 //init
 enum State {
@@ -9,7 +11,7 @@ enum State {
         Idle
     }
 
-State state = State.Initialized;
+State state = State.Initialized; // state variable
 Object stateChanged = new Object(); //lock object
 
 //calling from UI thread
